@@ -153,6 +153,12 @@ If everything went well and the setup completed without error, start the other s
 docker compose up
 ```
 
+Run fleet and apm:
+
+```sh
+docker compose -f docker-compose.yml -f extensions/fleet/fleet-compose.yml -f extensions/fleet/agent-apmserver-compose.yml up -d
+```
+
 > [!NOTE]
 > You can also run all services in the background (detached mode) by appending the `-d` flag to the above command.
 
